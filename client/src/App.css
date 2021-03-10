@@ -1,0 +1,76 @@
+.App {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    color: #fff;
+}
+
+.app-header h1 {
+    margin-right: 30px;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.add-todo {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.todos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    color: #fff;
+}
+
+.todo {
+    position: relative;
+    border: 1px solid #fff;
+    padding: 10px;
+    flex-basis: 15rem;
+}
+
+.todo-x-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.todo-content {
+    margin: 2rem 0;
+}
+
+.todo-edit-btn {
+    width: 20%;
+    margin: auto;
+}
+
+@media (max-width: 550px) {
+    .app-header {
+        flex-direction: column;
+    }
+
+    .add-todo {
+        width: 70%;
+    }
+
+    .todos {
+        grid-template-columns: 1fr;
+    }
+}
